@@ -2,7 +2,16 @@
     box-sizing: border-box;
 }
 
-p {
+header {
+    background-color: yellow;
+}
+
+body {
+    margin-top: 0px;
+    font-family: Helvetica, sans-serif;
+}
+
+#column-two {
     font-family: Helvetica, sans-serif;
     background-color: grey;
 }
@@ -14,6 +23,7 @@ img {
 
 h1 {
     width: 100%;
+    margin-top: 0px;
     text-align: center;
     background-color: red;
 }
@@ -35,4 +45,32 @@ nav a.nav-link {
 #nav-items {
     text-align: center;
     padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    img {
+        max-width: 50%;
+        float: right;
+        clear: both;
+        margin: 2px;
+    }
+    header {
+        width: 100%;
+        background-color: yellow;
+    }
+    #list-of-facts {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    img {
+        width: 50%;
+        display: inline-block;
+        float: left;
+        margin-right: 22px;
+    }
+    #column-two {
+        margin-left: 100px;
+    }
 }
