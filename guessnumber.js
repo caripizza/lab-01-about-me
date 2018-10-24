@@ -17,15 +17,6 @@ function checkGuessGame() {
     else {
         guessOneCount = guessOneCount + 1;
     }
-
-    if(guessOneCount < 4) {
-        guessTimeResponse.textContent = 'You almost got it!';
-    } 
-    else {
-        guessTimeResponse.textContent = 'TEST';
-        submit.disabled = true;
-    }
-
 }
 
 function resetGuessGame() {
