@@ -13,9 +13,12 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-#column-two {
+#elementcounter {
     font-family: Helvetica, sans-serif;
-    background-color: transparent;
+    text-align: center;
+    background-color: red;
+    display: block;
+    overflow: auto;
 }
 
 img {
