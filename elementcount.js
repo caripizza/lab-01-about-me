@@ -1,16 +1,24 @@
 /* eslint no-console: "off" */
-/* exported tryQuerySelector */
+/* exported tryQuerySelector refreshPage*/
 'use strict';
 
 var elementsResponse = document.getElementById(['elements-response']);
 
+
 function tryQuerySelector() {
-    var elements = document.querySelectorAll('input[name="elements"]:checked');
-    
-    for(var i = 0; i < elements.length; i++) {
-        var number = document.querySelectorAll(elements[i].value);
+    var tags = document.querySelectorAll('input[name="elements"]:checked');
+    var submit = document.getElementById(['element-button']);
+
+    for(var i = 0; i < tags.length; i++) {
+        var number = document.querySelectorAll(tags[i].value);
+        submit.disabled = true;
         // console.log(elements[i].value, number.length);
 
-        elementsResponse.textContent = elementsResponse.textContent + 'You selected:\r\n' + [elements[i].value] + ', which appears ' + [number.length] + ' times.\r\n';
+        elementsResponse.textContent = elementsResponse.textContent + 'You selected: ' + [tags[i].value] + ' (' + [number.length] + ' times)\r\n';
     }
 }
+// Reset button reloads the page
+function refreshPage(){
+    window.location.reload();
+} 
+

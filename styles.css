@@ -13,14 +13,6 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-section#element-counter {
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    background-color: red;
-    display: block;
-    overflow: auto;
-}
-
 img {
     width: 100%;
     padding: 2em;
@@ -71,6 +63,15 @@ button[type="reset"] {
     background-color: fuchsia;
   }
 
+section#element-counter {
+   /* font-family: Helvetica, sans-serif;
+    text-align: center; */
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+    display: block;
+    overflow: auto;
+}
 section#aboutquiz  {
     background-color: rgba(255, 0, 0, 0.3);
     float: right;
@@ -95,6 +96,13 @@ label {
     padding: 3px 3px 3px 3px;
   }
   
+  pre {
+    font-family: Helvetica, sans-serif;
+  }
+
+  /*
+    Starting at 431px, moves to two column layout, then at 500px wide back to single column 
+    */
 @media screen and (max-width: 600px) {
     img {
         max-width: 50%;

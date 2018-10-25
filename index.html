@@ -24,7 +24,6 @@
                 My career ranges from visual art and graphic design to music production, performance, and education. I am a multi-instrumentalist and songwriter with over 50 songs in my collection and 16 past music projects. I’ve developed all-original music for web and tv, produced and licensed commercial music worldwide, and designed digital branding for small businesses.
             </p>
         </div>
-    </main>
     <section class="section" id="column-one">
         <h3 id="list-of-facts">Things I enjoy:</h3>
         <ol>
@@ -33,10 +32,11 @@
             <li>Art making, pondering</li>
         </ol>
     </section>
+</main>
     <section id="element-counter">
             <h2>Element Counter</h2>
-            <p>Please select the elements:</p>
-                <div>
+            <p>Select html elements to see how many times they appear on this page:</p>
+                <div id="div-checkbox">
                   <label for="h-one">h1</label>
                   <input type="checkbox" name="elements" value="h1" />
                 </div>
@@ -53,7 +53,8 @@
                     <input type="checkbox" name="elements" value="input" />
                 </div>
                 <div>
-                    <button onclick="tryQuerySelector()">Count it!</button>
+                    <button onclick="tryQuerySelector()" id="element-button">Count it!</button>
+                    <button type="submit" onClick="refreshPage()">Reset</button>
                     <pre id="elements-response"></pre>
                 </div>
         </section>
