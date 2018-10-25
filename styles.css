@@ -13,7 +13,7 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-#elementcounter {
+section#element-counter {
     font-family: Helvetica, sans-serif;
     text-align: center;
     background-color: red;
