@@ -52,14 +52,16 @@ ol {
     list-style-position: inside;
 }
 
-button[type="submit"] {
+form button[type="submit"], #div-elements-buttons #element-button  {
     color:green;
     margin: 5px auto;
+    font-weight: 600;
   }
   
-button[type="reset"] {
+button[type="reset"], #div-elements-buttons button[type="submit"] {
     color: red;
     margin: 5px auto;
+    font-weight: 600;
   }
   
 .correct {
