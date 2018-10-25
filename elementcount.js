@@ -12,7 +12,6 @@ function tryQuerySelector() {
     for(var i = 0; i < tags.length; i++) {
         var number = document.querySelectorAll(tags[i].value);
         submit.disabled = true;
-        // console.log(elements[i].value, number.length);
 
         elementsResponse.textContent = elementsResponse.textContent + 'You selected: ' + [tags[i].value] + ' (' + [number.length] + ' times)\r\n';
     }

@@ -11,10 +11,13 @@ body {
     border-image-repeat: repeat;
     margin-top: 0px;
     font-family: Helvetica, sans-serif;
+    text-align: center;
 }
 
 img {
-    width: 100%;
+    width: 80%;
+    margin: 1.5em auto;
+    display: block;
     padding: 2em;
     border: 5px dashed red;
 }
@@ -43,6 +46,10 @@ nav a.nav-link {
 #nav-items {
     text-align: center;
     padding: 5px;
+}
+
+ol {
+    list-style-position: inside;
 }
 
 button[type="submit"] {
@@ -96,30 +103,23 @@ label {
     padding: 3px 3px 3px 3px;
   }
   
-  pre {
+pre {
     font-family: Helvetica, sans-serif;
   }
 
-  /*
-    Starting at 431px, moves to two column layout, then at 500px wide back to single column 
-    */
+
 @media screen and (max-width: 600px) {
     img {
-        max-width: 50%;
-        float: right;
-        clear: both;
-        margin: 2px;
+        max-width: 100%;
+        margin-top: 1.5em;
     }
     header {
         width: 100%;
         background-color: yellow;
     }
-    #list-of-facts {
-        text-align: left;
-    }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
     img {
         width: 50%;
         display: inline-block;
