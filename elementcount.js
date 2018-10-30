@@ -1,4 +1,3 @@
-/* eslint no-console: "off" */
 /* exported tryQuerySelector refreshPage*/
 'use strict';
 
@@ -19,5 +18,4 @@ function tryQuerySelector() {
 // Reset button reloads the page
 function refreshPage(){
     window.location.reload();
-} 
-
+}
